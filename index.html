@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-div">
+        <div class="heading">
+            <h2 class="title-text"><span>Bundle &amp; Save</span></h2>
+            <div class="hline"></div>
+        </div>
+
+        <div class="div-brd-grey">
+            <div class="first-card">
+                <p>
+                    <input type="radio" id="test1" name="radio-group" checked="" >
+                    <label for="test1" class="radio-label" onclick="opentablefirst()">1 pair</label>
+                    <span class="random-txt">DKK 195.00</span>
+                </p>
+
+                <p class="offer-name">50% OFF</p>
+            </div>
+            <table id="showfirsttable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>size</th>
+                        <th>color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1</td>
+                        <td>
+                            <select class="select-1st">
+                                <option value="">S</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="select-2st">
+                                <option value="">colour</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="div-brd-green">
+            <div class="first-card">
+                <p>
+                    <input type="radio" id="test2" name="radio-group" checked="" >
+                    <label for="test2" class="radio-label" onclick="opentablesecond()">2 pair</label>
+                    <span class="random-txt">DKK 195.00</span>
+                </p>
+
+                <p class="xyz">Dkk 345.00</p>
+                <span class="Popular-txt">Most Popular</span>
+                <p class="offer-name">40% OFF</p>
+            </div>
+
+            <table id="showsecondtable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>size</th>
+                        <th>color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1</td>
+                        <td>
+                            <select class="select-1st">
+                                <option value="">S</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="select-2st">
+                                <option value="">colour</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="div-brd-grey">
+            <div class="first-card">
+                <p>
+                    <input type="radio" id="test3" name="radio-group" checked="" >
+                    <label for="test3" class="radio-label" onclick="opentablethird()">3 pair</label>
+                    <span class="random-txt">DKK 528.00</span>
+                </p>
+
+                <p class="offer-name">60% OFF</p>
+            </div>
+            <table id="showthirdtable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>size</th>
+                        <th>color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1</td>
+                        <td>
+                            <select class="select-1st">
+                                <option value="">S</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="select-2st">
+                                <option value="">colour</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer-div">
+            <span class="footer-line-1">Free 2 Day Shipping</span>
+            <span class="footer-line-2">Total : DKK 360.00</span>
+        </div>
+        <div>
+            <button class="cart-button">+ Add to Cart</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        $("#showfirsttable").hide();
+        $("#showsecondtable").hide();
+        $("#showthirdtable").hide();
+
+        function opentablefirst(){
+            $("#showfirsttable").show();
+            $("#showfirsttable").hide();
+        }
+
+        function opentablesecond(){
+            $("#showsecondtable").show();
+            $("#showsecondtable").hide();
+        }
+        
+        function opentablethird(){
+            $("#showthirdtable").show();
+            $("#showthirdtable").hide();
+        }
+        
+        
+
+
+
+    </script>
+
+</body>
+
+</html>

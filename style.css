@@ -1,0 +1,269 @@
+@font-face {
+    font-family: "poppins-light";
+    src: url(Poppins-Medium.ttf);
+}
+
+.main-div {
+    width: 40%;
+    margin: auto;
+}
+
+.heading {
+    position: relative;
+    text-align: center;
+}
+
+.title-text span {
+    color: #007F61;
+    font-family: "poppins-light";
+    font-size: 18.076px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #ffff;
+    padding: 0 15px;
+
+}
+
+.hline {
+    content: "";
+    height: 1px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #C8C8C8;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+
+
+/* custom CSS for radio button */
+
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+
+    display: inline-block;
+
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #007F61;
+    border-radius: 100%;
+    background: #fff;
+}
+
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: #007F61;
+    position: absolute;
+    top: 16px;
+    left: 3.9px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.radio-label {
+    color: #000;
+    font-family: "poppins-light";
+    font-size: 14.461px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+/* card  */
+.first-card {
+    display: flex;
+
+    width: 95%;
+    padding: 2px 15px;
+    border-radius: 4px;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.div-brd-grey {
+    margin-bottom: 15px;
+    border: 1px solid #C8C8C8;
+    border-radius: 3.615px;
+}
+
+.div-brd-green {
+    border-radius: 3.615px;
+    border: 0.904px solid #007F61;
+    background: #F4FBF9;
+    margin-bottom: 15px;
+
+}
+
+
+.random-txt {
+    display: inherit;
+    padding-left: 30px;
+    font-weight: 500;
+    font-family: "poppins-light";
+}
+
+.offer-name {
+    justify-content: end;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-family: "poppins-light";
+    align-content: space-around;
+}
+
+.xyz {
+    opacity: 0.6;
+    font-weight: 500;
+    font-family: "poppins-light";
+    margin-top: 35px;
+}
+
+.xyz:before {
+    content: "";
+    height: 2px;
+    width: 14%;
+    left: 51px;
+    right: 0px;
+    margin: auto;
+    background: #C8C8C8;
+    position: absolute;
+    top: 58%;
+    z-index: -1;
+}
+
+.Popular-txt {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #007F61;
+    font-family: 'poppins-light';
+    font-size: 12.653px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+table {
+    margin-left: 29px;
+    color: #000;
+    font-family: 'poppins-light';
+    font-size: 13px;
+    padding: 5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.select-1st {
+    padding: 3px;
+    width: 50px;
+    border-radius: 1.808px;
+    border: 0.904px solid #D9D9D9;
+    background: #FFF;
+    color: #000;
+    font-family: 'poppins-light';
+    font-size: 10.846px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.select-2st {
+    padding: 3px;
+    width: 78px;
+    border-radius: 1.808px;
+    border: 0.904px solid #D9D9D9;
+    background: #FFF;
+    color: #000;
+    font-family: 'poppins-light';
+    font-size: 10.846px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.footer-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-line-1 {
+    color: #007F61;
+    font-weight: 500;
+    line-height: normal;
+    font-family: 'poppins-light';
+    opacity: 0.6;
+}
+
+.footer-line-2 {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: 'poppins-light';
+    line-height: normal;
+}
+
+.cart-button{
+    width: 100%;
+    border-radius: 4px 4px 4px 0px;
+    background: #007F61;
+    border: none;
+    color: #FFF;
+    font-style: normal;
+    font-family: 'poppins-light';
+    font-weight: 600;
+    line-height: normal;
+    height: 35px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-div {
+        width: 100%;
+        margin: auto;
+    }
+    
+  }
+
